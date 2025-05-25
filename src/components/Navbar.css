@@ -1,0 +1,45 @@
+.underline{
+  height: 2px;
+  width: 45px;
+  background:linear-gradient(270deg, #ec7b11 0.36% , #be09f0 102.06%);
+}
+
+.open{
+  display: none;
+}
+.close{
+  display: none;
+}
+
+@media (max-width:568px){
+  .open{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+  }
+  .close{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  .navigation{
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background: #1F0016;
+    height: 100%;
+    width: 270px;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+    padding-top: 60px;
+  }
+  .navigation li{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+}

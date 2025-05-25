@@ -1,0 +1,38 @@
+body{
+  background-color: #111111;
+  color: white;
+  height: 100vh;
+  font-family: "Outfit", serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button{
+  background:linear-gradient(270deg, #DA7C25 0.36% , #B923E1 102.06%);
+}
+.button:hover{
+  background:linear-gradient(270deg, #ec7b11 0.36% , #be09f0 102.06%);
+  border:  1px solid white;
+}
+
+.contain{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width:768px){
+  .contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hover:hover{
+  transform: scale(1.1);
+  transition:all 0.5s ease-in-out;
+  border: 2px solid rgb(250, 52, 85);
+}
+
+
