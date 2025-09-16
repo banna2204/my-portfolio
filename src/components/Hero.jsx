@@ -31,7 +31,7 @@ const Hero = () => {
                 style={{ width: "20px", height: "20px", padding: "5px" }}
               ></lord-icon>
             </AnchorLink>
-            <a href="/finalResume.pdf" download="My_Resume.pdf">
+            <a href="/ResumeLast.pdf" download="My_Resume.pdf">
             <button className="px-4 py-2 rounded-full cursor-pointer border-2 border-white hover:border-pink-900">
               Resume
               <lord-icon
