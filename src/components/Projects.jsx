@@ -16,10 +16,10 @@ const Projects = () => {
           <div className="flex flex-col items-center gap-2">
             <img
               className="hover cursor-pointer rounded-xl md:border-8 border-4 border-purple-400 md:h-[215px] h-[150px]"
-              src="screenshot/listing.png"
+              src="screenshot/resume.png"
               alt=""
             />
-            <a href="https://listing-p1ov.onrender.com/">
+            <a href="https://ai-resume-builder-8oq4.onrender.com">
               <div className="flex gap-1 hover:gap-2 transition-all">
                 Know More{" "}
                 <img className="invert" width={20} src="more.png" alt="" />
@@ -27,13 +27,14 @@ const Projects = () => {
             </a>
           </div>
 
+
           <div className="flex flex-col items-center gap-2">
             <img
               className="hover cursor-pointer rounded-xl md:border-8 border-4 border-purple-400 md:h-[215px] h-[150px]"
-              src="chatApp.png"
+              src="screenshot/listing.png"
               alt=""
             />
-            <a href="https://chatapp-kh5w.onrender.com">
+            <a href="https://listing-p1ov.onrender.com/">
               <div className="flex gap-1 hover:gap-2 transition-all">
                 Know More{" "}
                 <img className="invert" width={20} src="more.png" alt="" />
