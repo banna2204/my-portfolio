@@ -1,5 +1,6 @@
 import React from "react";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -12,16 +13,38 @@ const Hero = () => {
             src="mine3.jpg"
             alt=""
           />
-          <h1 className="mt-6 md:text-4xl text-3xl font-bold bg-gradient-to-r from-pink-700 to-yellow-500 bg-clip-text text-transparent">
+
+          <motion.h1
+            initial={{
+              y: 80,
+              opacity: 0,
+              filter: "blur(12px)",
+            }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              filter: "blur(0px)",
+            }}
+            transition={{
+              duration: 1,
+              ease: [0.16, 1, 0.3, 1], // smooth cinematic curve
+              delay: 0.2,
+            }}
+            className="mt-6 md:text-5xl text-3xl font-bold bg-gradient-to-r from-pink-700 to-yellow-500 bg-clip-text text-transparent"
+          >
             I'm Shubham Singh
-          </h1>
+          </motion.h1>
           <p className=" text-sm sm:w-[60%] w-[90%] text-center">
             I'm a passionate MERN stack web developer with a focus on building
             dynamic and responsive web applications. With expertise in MongoDB,
             Express.js, React, and Node.js.
           </p>
           <div className="flex m-14 gap-5">
-            <AnchorLink offset={50} href="#contact" className=" button px-4 py-3 rounded-full cursor-pointer">
+            <AnchorLink
+              offset={50}
+              href="#contact"
+              className=" button px-4 py-3 rounded-full cursor-pointer"
+            >
               connect
               <lord-icon
                 src="https://cdn.lordicon.com/kdduutaw.json"
@@ -31,17 +54,17 @@ const Hero = () => {
                 style={{ width: "20px", height: "20px", padding: "5px" }}
               ></lord-icon>
             </AnchorLink>
-            <a href="/ResumeLast.pdf" download="My_Resume.pdf">
-            <button className="px-4 py-2 rounded-full cursor-pointer border-2 border-white hover:border-pink-900">
-              Resume
-              <lord-icon
-                src="https://cdn.lordicon.com/fjvfsqea.json"
-                trigger="hover"
-                stroke="bold"
-                colors="primary:#ffffff,secondary:#16c72e"
-                style={{ width: "20px", height: "20px", padding: "5px" }}
-              ></lord-icon>
-            </button>
+            <a href="/CV_SHUBHAM.pdf" download="My_Resume.pdf">
+              <button className="px-4 py-2 rounded-full cursor-pointer border-2 border-white hover:border-pink-900">
+                Resume
+                <lord-icon
+                  src="https://cdn.lordicon.com/fjvfsqea.json"
+                  trigger="hover"
+                  stroke="bold"
+                  colors="primary:#ffffff,secondary:#16c72e"
+                  style={{ width: "20px", height: "20px", padding: "5px" }}
+                ></lord-icon>
+              </button>
             </a>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { ToastContainer, toast } from 'react-toastify';
+import {motion} from 'framer-motion'
 
 const Contact = () => {
 
@@ -37,7 +38,14 @@ const Contact = () => {
   return (
     <>
         <ToastContainer />
-      <div id="contact" className="flex flex-col items-center justify-center md:mt-12 mt-6 w-full md:gap-24 gap-10">
+      <motion.div
+        initial={{ y: 80, opacity: 0, filter: "blur(10px)" }}
+        whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+        transition={{
+          duration: 2.5,
+          ease: [0.16, 1, 0.3, 1],
+        }}
+      id="contact" className="flex flex-col items-center justify-center md:mt-12 mt-6 w-full md:gap-24 gap-10">
         <h1 className="font-bold text-5xl bg-gradient-to-r from-pink-700 to-yellow-500 bg-clip-text text-transparent md:mb-5 ">
           Get in touch
         </h1>
@@ -118,7 +126,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
       <hr />
     </>
   );

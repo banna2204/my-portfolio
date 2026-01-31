@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from 'framer-motion'
 
 const Skills = () => {
   let circle = (
@@ -12,7 +13,15 @@ const Skills = () => {
   );
   return (
     <>
-      <div id="skills" className="flex flex-col items-center justify-center mt-8 gap-5">
+      <motion.div
+        initial={{ y: 80, opacity: 0, filter: "blur(10px)" }}
+        whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+        transition={{
+          duration: 3,
+          ease: [0.16, 1, 0.3, 1],
+        }}
+        viewport={{ once: true, amount: 0.3 }}
+      id="skills" className="flex flex-col items-center justify-center mt-8 gap-5">
         <h1 className="font-bold text-5xl bg-gradient-to-r from-pink-700 to-yellow-500 bg-clip-text text-transparent mb-5">
           My Skills
         </h1>
@@ -44,7 +53,7 @@ const Skills = () => {
             <span>{circle} Git&GitHub</span>
           </div>
         </div>
-      </div>
+      </motion.div>
       <hr />
     </>
   );

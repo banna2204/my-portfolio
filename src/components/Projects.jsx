@@ -1,9 +1,16 @@
 import React from "react";
+import {motion} from 'framer-motion'
 
 const Projects = () => {
   return (
     <>
-      <div
+      <motion.div
+      initial={{ y: 80, opacity: 0, filter: "blur(10px)" }}
+        whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+        transition={{
+          duration: 3,
+          ease: [0.16, 1, 0.3, 1],
+        }}
         id="projects"
         className="flex flex-col items-center justify-center mt-8"
       >
@@ -98,7 +105,7 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
       <hr />
     </>
   );
