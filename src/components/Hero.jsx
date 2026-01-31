@@ -5,17 +5,8 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
-      <div id="home" className="flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center gap-3">
-          <img
-            className=" mt-12 rounded-full"
-            width={230}
-            src="mine3.jpg"
-            alt=""
-          />
-
-          <motion.h1
-            initial={{
+      <motion.div
+        initial={{
               y: 80,
               opacity: 0,
               filter: "blur(12px)",
@@ -30,10 +21,20 @@ const Hero = () => {
               ease: [0.16, 1, 0.3, 1], // smooth cinematic curve
               delay: 0.2,
             }}
+      id="home" className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img
+            className=" mt-12 rounded-full"
+            width={230}
+            src="mine3.jpg"
+            alt=""
+          />
+
+          <h1
             className="mt-6 md:text-5xl text-3xl font-bold bg-gradient-to-r from-pink-700 to-yellow-500 bg-clip-text text-transparent"
           >
             I'm Shubham Singh
-          </motion.h1>
+          </h1>
           <p className=" text-sm sm:w-[60%] w-[90%] text-center">
             I'm a passionate MERN stack web developer with a focus on building
             dynamic and responsive web applications. With expertise in MongoDB,
@@ -68,7 +69,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
       <hr />
     </>
   );
