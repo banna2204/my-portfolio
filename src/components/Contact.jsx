@@ -42,7 +42,7 @@ const Contact = () => {
         initial={{ y: 80, opacity: 0, filter: "blur(10px)" }}
         whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
         transition={{
-          duration: 2.5,
+          duration: 2,
           ease: [0.16, 1, 0.3, 1],
         }}
       id="contact" className="flex flex-col items-center justify-center md:mt-12 mt-6 w-full md:gap-24 gap-10">

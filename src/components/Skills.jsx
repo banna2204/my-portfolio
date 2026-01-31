@@ -17,7 +17,7 @@ const Skills = () => {
         initial={{ y: 80, opacity: 0, filter: "blur(10px)" }}
         whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
         transition={{
-          duration: 3,
+          duration: 2,
           ease: [0.16, 1, 0.3, 1],
         }}
         viewport={{ once: true, amount: 0.3 }}
