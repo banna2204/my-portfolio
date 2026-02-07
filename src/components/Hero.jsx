@@ -41,7 +41,7 @@ const Hero = () => {
             dynamic and responsive web applications. With expertise in MongoDB,
             Express.js, React, and Node.js.
           </p>
-          <div className="flex m-14 gap-5">
+          <div className="flex flex-col md:flex-row m-14 gap-5">
             <a
               offset={50}
               href="tel: +91 9617368390"
