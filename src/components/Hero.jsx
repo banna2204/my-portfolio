@@ -22,7 +22,7 @@ const Hero = () => {
               delay: 0.2,
             }}
             id="home"
-             className="flex flex-col items-center justify-center mt-24">
+             className="flex flex-col items-center justify-center md:mt-32 mt-24">
           <div className="flex flex-col items-center justify-center gap-3">
           <img
             className=" mt-12 rounded-full"
@@ -42,20 +42,20 @@ const Hero = () => {
             Express.js, React, and Node.js.
           </p>
           <div className="flex m-14 gap-5">
-            <AnchorLink
+            <a
               offset={50}
-              href="#contact"
-              className=" button px-4 py-3 rounded-full cursor-pointer"
+              href="tel: +91 9617368390"
+              className="flex items-center justify-center gap-2 button px-4 py-3 rounded-full cursor-pointer"
             >
-              connect
               <lord-icon
                 src="https://cdn.lordicon.com/kdduutaw.json"
                 trigger="hover"
                 stroke="bold"
                 colors="primary:#ffffff,secondary:#ffffff"
-                style={{ width: "20px", height: "20px", padding: "5px" }}
+                style={{ width: "20px", height: "20px" }}
               ></lord-icon>
-            </AnchorLink>
+              <div>+91 96173-68390</div>
+            </a>
             <a href="/CV_SHUBHAM.pdf" download="My_Resume.pdf">
               <button className="px-4 py-2 rounded-full cursor-pointer border-2 border-white hover:border-pink-900">
                 Resume

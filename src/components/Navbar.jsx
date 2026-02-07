@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
   <>
     <div className="fixed top-0 w-full h-20 flex items-center justify-around bg-black z-50">
-    <AnchorLink  href="#home" className="hidden md:block">
+    <AnchorLink  href="#home">
         <img width={100} src="favicon.png" alt="logo" />
       </AnchorLink>
       <span><img onClick={handleOpen} width={50} className="open invert" src="hamburger.png" alt="" /></span>
@@ -34,14 +34,14 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <a offset={50} href="tel:+91 9617368390" className="text-white flex gap-2 items-center justify-center button px-4 py-3 rounded-full cursor-pointer">
+      <a offset={50} href="#contact" className="text-white hidden md:flex gap-2 items-center justify-center button px-4 py-3 rounded-full cursor-pointer">
         <lord-icon
           src="https://cdn.lordicon.com/kdduutaw.json"
           trigger="hover"
           colors="primary:#ffffff,secondary:#ffffff"
           style={{ width: "20px", height: "20px"}}
         ></lord-icon>
-        <div>+91 96173-68390</div>
+        <div>Connect</div>
       </a>
     </div>
   </>
