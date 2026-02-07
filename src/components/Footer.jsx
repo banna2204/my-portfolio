@@ -13,7 +13,7 @@ const Footer = () => {
     </div>
     <div className='flex justify-center items-center gap-6 pb-3'>
       <span>
-        <a href="https://www.instagram.com/banna____shubham/">
+        <a href="https://www.instagram.com/banna____shubham/" rel="noopener noreferrer" target="_blank">
         <lord-icon
           src="https://cdn.lordicon.com/cuwcpyqc.json"
           trigger="hover"
@@ -23,7 +23,7 @@ const Footer = () => {
         </a>
       </span>
       <span>
-      <a href="https://www.linkedin.com/in/shubham-singh-panwar-43275024b">
+      <a href="https://www.linkedin.com/in/shubham-singh-panwar-43275024b" rel="noopener noreferrer" target="_blank">
         <lord-icon
           src="https://cdn.lordicon.com/euybrknk.json"
           trigger="hover"
@@ -33,7 +33,7 @@ const Footer = () => {
       </a>
       </span>
       <span>
-        <a href="https://github.com/banna2204">
+        <a href="https://github.com/banna2204" rel="noopener noreferrer" target="_blank">
           <img className='invert pb-2 ' width={28} src="github2.jpg" alt="" />
         </a>
       </span>

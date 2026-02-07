@@ -13,7 +13,7 @@ const About = () => {
         }}
         viewport={{ once: true, amount: 0.3 }}
         id="about"
-        className="flex flex-col items-center justify-center mt-4 mb-7 gap-10 "
+        className="flex flex-col items-center justify-center md:mt-24 mt-8 mb-7  gap-10 "
       >
         <h1 className="font-bold md:text-6xl text-5xl bg-gradient-to-r from-pink-700 to-yellow-500 bg-clip-text text-transparent mb-4">
           About me
@@ -62,7 +62,7 @@ const About = () => {
       <h1 className="font-bold text-4xl mt-8 bg-gradient-to-r from-pink-700 to-yellow-700 bg-clip-text text-transparent md:ms-28 p-3">
         Education{" "}
       </h1>
-      <div className="md:ms-28 p-3 py-3 md:w-3/4 w-full">
+      <div className="md:ms-28 p-3 py-3 md:w-3/4 w-full md:mb-10">
         I am currently pursuing a Bachelor of Technology B.Tech in Computer
         Science at Sushila Devi Bansal College, Indore, with an expected
         graduation year of 2026. I completed my higher secondary education Class

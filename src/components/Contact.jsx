@@ -1,9 +1,8 @@
 import React from "react";
-import { ToastContainer, toast } from 'react-toastify';
-import {motion} from 'framer-motion'
+import { ToastContainer, toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 const Contact = () => {
-
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -13,7 +12,11 @@ const Contact = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    if (object.name.length < 3 && object.email.length < 5 && object.message.length < 3 ) {
+    if (
+      object.name.length < 3 &&
+      object.email.length < 5 &&
+      object.message.length < 3
+    ) {
       return toast("Please enter valid details");
     }
 
@@ -21,23 +24,22 @@ const Contact = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json"
+        Accept: "application/json",
       },
-      body: json
+      body: json,
     }).then((res) => res.json());
 
     if (res.success) {
       toast("Email send successfully!");
-      event.target.email.value='';
-      event.target.name.value='';
-      event.target.message.value='';
+      event.target.email.value = "";
+      event.target.name.value = "";
+      event.target.message.value = "";
     }
   };
 
-
   return (
     <>
-        <ToastContainer />
+      <ToastContainer />
       <motion.div
         initial={{ y: 80, opacity: 0, filter: "blur(10px)" }}
         whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
@@ -45,7 +47,9 @@ const Contact = () => {
           duration: 2,
           ease: [0.16, 1, 0.3, 1],
         }}
-      id="contact" className="flex flex-col items-center justify-center md:mt-12 mt-6 w-full md:gap-24 gap-10">
+        id="contact"
+        className="flex flex-col items-center justify-center md:mt-24 mt-6 w-full md:gap-24 gap-10"
+      >
         <h1 className="font-bold text-5xl bg-gradient-to-r from-pink-700 to-yellow-500 bg-clip-text text-transparent md:mb-5 ">
           Get in touch
         </h1>
@@ -65,7 +69,12 @@ const Contact = () => {
                 trigger="hover"
                 stroke="bold"
                 colors="primary:#ffffff,secondary:#ffffff"
-                style={{width: "25px",height: "25px",margin: "8px",paddingTop: "15px",}}
+                style={{
+                  width: "25px",
+                  height: "25px",
+                  margin: "8px",
+                  paddingTop: "15px",
+                }}
               ></lord-icon>
               shubham.rajput2204@gmail.com
             </p>
@@ -75,7 +84,12 @@ const Contact = () => {
                 trigger="hover"
                 stroke="bold"
                 colors="primary:#242424,secondary:#ffffff"
-                style={{width: "25px",height: "25px",margin: "8px",paddingTop: "15px",}}
+                style={{
+                  width: "25px",
+                  height: "25px",
+                  margin: "8px",
+                  paddingTop: "15px",
+                }}
               ></lord-icon>
               +91 96173-68390
             </p>
@@ -85,13 +99,21 @@ const Contact = () => {
                 trigger="hover"
                 stroke="bold"
                 colors="primary:#ffffff,secondary:#0a5c15"
-                style={{width: "25px",height: "25px",margin: "8px",paddingTop: "15px",}}
+                style={{
+                  width: "25px",
+                  height: "25px",
+                  margin: "8px",
+                  paddingTop: "15px",
+                }}
               ></lord-icon>
               Indore,India
             </p>
           </div>
 
-          <form onSubmit={onSubmit} className="mt-10 md:mt-0 right flex flex-col md:w-[40%] w-full gap-3">
+          <form
+            onSubmit={onSubmit}
+            className="mt-10 md:mt-0 right flex flex-col md:w-[40%] w-full gap-3"
+          >
             <div className="flex flex-col gap-2">
               Your Name
               <input

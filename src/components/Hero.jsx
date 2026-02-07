@@ -18,11 +18,12 @@ const Hero = () => {
             }}
             transition={{
               duration: 1,
-              ease: [0.16, 1, 0.3, 1], // smooth cinematic curve
+              ease: [0.16, 1, 0.3, 1], 
               delay: 0.2,
             }}
-      id="home" className="flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center gap-3">
+            id="home"
+             className="flex flex-col items-center justify-center mt-24">
+          <div className="flex flex-col items-center justify-center gap-3">
           <img
             className=" mt-12 rounded-full"
             width={230}
@@ -51,7 +52,7 @@ const Hero = () => {
                 src="https://cdn.lordicon.com/kdduutaw.json"
                 trigger="hover"
                 stroke="bold"
-                colors="primary:#000000,secondary:#000000"
+                colors="primary:#ffffff,secondary:#ffffff"
                 style={{ width: "20px", height: "20px", padding: "5px" }}
               ></lord-icon>
             </AnchorLink>

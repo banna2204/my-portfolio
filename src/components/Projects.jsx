@@ -12,7 +12,7 @@ const Projects = () => {
           ease: [0.16, 1, 0.3, 1],
         }}
         id="projects"
-        className="flex flex-col items-center justify-center mt-8"
+        className="flex flex-col items-center justify-center md:mt-24 mt-8"
       >
         <h1 className="font-bold text-5xl bg-gradient-to-r from-pink-700 to-yellow-500 bg-clip-text text-transparent mb-7">
           My Work
@@ -26,7 +26,7 @@ const Projects = () => {
               src="screenshot/resume.png"
               alt=""
             />
-            <a href="https://ai-resume-builder-8oq4.onrender.com">
+            <a href="https://ai-resume-builder-8oq4.onrender.com" rel="noopener noreferrer" target="_blank">
               <div className="flex gap-1 hover:gap-2 transition-all">
                 Know More{" "}
                 <img className="invert" width={20} src="more.png" alt="" />
@@ -41,7 +41,7 @@ const Projects = () => {
               src="screenshot/listing.png"
               alt=""
             />
-            <a href="https://listing-p1ov.onrender.com/">
+            <a href="https://listing-p1ov.onrender.com/" rel="noopener noreferrer" target="_blank">
               <div className="flex gap-1 hover:gap-2 transition-all">
                 Know More{" "}
                 <img className="invert" width={20} src="more.png" alt="" />
@@ -55,7 +55,7 @@ const Projects = () => {
               src="screenshot/foodDel.png"
               alt=""
             />
-            <a href="https://fooddelivery-frontend-swgd.onrender.com/">
+            <a href="https://fooddelivery-frontend-swgd.onrender.com/" rel="noopener noreferrer" target="_blank">
               <div className="flex gap-1 hover:gap-2 transition-all">
                 Know More{" "}
                 <img className="invert" width={20} src="more.png" alt="" />
@@ -69,7 +69,7 @@ const Projects = () => {
               src="screenshot/todo.png"
               alt=""
             />
-            <a href="https://make-task-app.netlify.app/">
+            <a href="https://make-task-app.netlify.app/" rel="noopener noreferrer" target="_blank">
               <div className="flex gap-1 hover:gap-2 transition-all">
                 Know More{" "}
                 <img className="invert" width={20} src="more.png" alt="" />
@@ -83,7 +83,7 @@ const Projects = () => {
               src="screenshot/passReact.png"
               alt=""
             />
-            <a href="https://pass-manager-app.netlify.app/">
+            <a href="https://pass-manager-app.netlify.app/" rel="noopener noreferrer" target="_blank">
               <div className="flex gap-1 hover:gap-2 transition-all">
                 Know More{" "}
                 <img className="invert" width={20} src="more.png" alt="" />
@@ -97,7 +97,7 @@ const Projects = () => {
               src="screenshot/myntra.png"
               alt=""
             />
-            <a href="https://myyntra-ecommerce.netlify.app/">
+            <a href="https://myyntra-ecommerce.netlify.app/" rel="noopener noreferrer" target="_blank">
               <div className="flex gap-1 hover:gap-2 transition-all">
                 Know More{" "}
                 <img className="invert" width={20} src="more.png" alt="" />
